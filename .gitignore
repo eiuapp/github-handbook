@@ -1,7 +1,7 @@
 #.*
 !.gitignore
 /public/
-/themes/
+/themes/hugo-*
 /update_theme.sh
 /update_theme_learn.sh
 /*.bak
