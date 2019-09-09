@@ -33,3 +33,28 @@ https://github.com/dadlan/dadlan.com/blob/master/.github/workflows/push.yaml
 3. Add your public key within "Allow write access" option.
 4. Copy your private deploy key to GIT_DEPLOY_KEY secret in "Settings > Secrets"
 
+## build前下载themes
+
+```bash
+Build 2s
+##[error]Docker run failed with exit code 255
+Run mattbailey/actions-hugo@v0.57.2
+/usr/bin/docker run --name df7dc4ad10577cef04c17b47013079333c4ac_cbd433 --label 0df7dc --workdir /github/workspace --rm -e GITHUB_TOKEN -e INPUT_ARGS -e HOME -e GITHUB_REF -e GITHUB_SHA -e GITHUB_REPOSITORY -e GITHUB_ACTOR -e GITHUB_WORKFLOW -e GITHUB_HEAD_REF -e GITHUB_BASE_REF -e GITHUB_EVENT_NAME -e GITHUB_WORKSPACE -e GITHUB_ACTION -e GITHUB_EVENT_PATH -e RUNNER_OS -e RUNNER_TOOL_CACHE -e RUNNER_TEMP -e RUNNER_WORKSPACE -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/github-handbook/github-handbook":"/github/workspace" 0df7dc:4ad10577cef04c17b47013079333c4ac --gc --minify
+Generating site
+hugo: /usr/lib/libstdc++.so.6: no version information available (required by hugo)
+hugo: /usr/lib/libstdc++.so.6: no version information available (required by hugo)
+hugo: /usr/lib/libstdc++.so.6: no version information available (required by hugo)
+hugo: /usr/lib/libstdc++.so.6: no version information available (required by hugo)
+hugo: /usr/lib/libstdc++.so.6: no version information available (required by hugo)
+hugo: /usr/lib/libstdc++.so.6: no version information available (required by hugo)
+hugo: /usr/lib/libstdc++.so.6: no version information available (required by hugo)
+hugo: /usr/lib/libstdc++.so.6: no version information available (required by hugo)
+hugo: /usr/lib/libstdc++.so.6: no version information available (required by hugo)
+Error: module "hugo-theme-learn" not found; either add it as a Hugo Module or store it in "/github/workspace/themes".: module does not exist
+##[error]Docker run failed with exit code 255
+```
+
+如上，提示，`module "hugo-theme-learn" not found`, 说明这个工程依赖 "hugo-theme-learn" 没有下载。
+
+在 .travis.yml file 中是放在了 `script` 中的。
+
