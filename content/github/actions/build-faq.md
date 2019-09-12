@@ -103,7 +103,49 @@ jobs:
         PUBLISH_DIR: ./public
 ```
 
+如果这个时候，没有 git submodule ，则可以结束了。
+
+但是，当你有 submodule 时，则要加上 
+
+```yml
+with: 
+   submodules : true
+```
+
+完整如下：
+
+```yml
+name: github pages
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@master
+      with:
+        submodules: true
+
+    - name: build
+      uses: peaceiris/actions-hugo@v0.58.1
+      with:
+        args: --gc --minify --cleanDestinationDir
+
+    - name: deploy
+      uses: peaceiris/actions-gh-pages@v2.2.0
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.DEPLOY_TOKEN_MATTBAILEY }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./public
+```
+
 成功了。
+
+
 
 **另外** 这个 https://github.com/peaceiris/actions-gh-pages 里面有，包括
 

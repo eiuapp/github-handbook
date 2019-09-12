@@ -48,6 +48,8 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@master
+      with:
+        submodules: true
 
     - name: build
       uses: peaceiris/actions-hugo@v0.58.1
