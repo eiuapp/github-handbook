@@ -8,7 +8,63 @@ description: "github actions"
 
 hugo 与 github actions 
 
-## 查找路径
+
+
+## 使用 hugo-build-action 解决
+
+- https://github.com/marketplace?utf8=%E2%9C%93&type=actions&query=hugo
+- https://github.com/marketplace/actions/hugo-build-action  找到 github 
+- https://github.com/peaceiris/actions-hugo 
+
+## 操作
+
+结合一下 https://github.com/khanhicetea/gh-actions-hugo-deploy-gh-pages 提到的 `Create Deploy Key` 进行操作
+
+### Create Deploy Key
+
+1. Generate deploy key ssh-keygen -t rsa -f hugo -q -N ""
+2. Then go to "Settings > Deploy Keys" of repository
+3. Add your public key within "Allow write access" option.
+4. Copy your private deploy key to GIT_DEPLOY_KEY secret in "Settings > Secrets"
+
+### `.github/workflows/push.yml`
+
+- https://github.com/peaceiris/actions-hugo 
+
+直接把这README.md 中的 `.github/workflows/gh-pages.yml` 示例弄过来了，替换成 `.github/workflows/push.yml`
+
+具体如下：
+
+```yml
+name: github pages
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@master
+
+    - name: build
+      uses: peaceiris/actions-hugo@v0.58.1
+      with:
+        args: --gc --minify --cleanDestinationDir
+
+    - name: deploy
+      uses: peaceiris/actions-gh-pages@v2.2.0
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.DEPLOY_TOKEN_MATTBAILEY }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./public
+```
+
+成功了。
+
+## (可跳过)查找路径
 
 https://github.com/marketplace?utf8=%E2%9C%93&type=actions&query=hugo
 
@@ -22,16 +78,6 @@ https://github.com/dadlan/dadlan.com
 
 https://github.com/dadlan/dadlan.com/blob/master/.github/workflows/push.yaml
 
-## 操作
-
-结合一下 https://github.com/khanhicetea/gh-actions-hugo-deploy-gh-pages 提到的 `Create Deploy Key` 进行操作
-
-### Create Deploy Key
-
-1. Generate deploy key ssh-keygen -t rsa -f hugo -q -N ""
-2. Then go to "Settings > Deploy Keys" of repository
-3. Add your public key within "Allow write access" option.
-4. Copy your private deploy key to GIT_DEPLOY_KEY secret in "Settings > Secrets"
 
 ## build前下载themes
 

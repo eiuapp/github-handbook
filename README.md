@@ -10,7 +10,7 @@
 
 请点击下面的链接阅读:
 
-- [在线阅读](https://eiuapp.github.io/)：hugo格式，界面清爽。
+- [在线阅读](https://eiuapp.github.io/github-handbook/)：hugo格式，界面清爽。
 - [@github](https://github.com/eiuapp/github-handbook/)：源码托管于github，如有谬误或需讨论，请提issue，欢迎提交PR
 
 
