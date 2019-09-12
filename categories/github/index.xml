@@ -1,28 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>github on Documentation for Hugo Learn Theme</title>
-    <link>https://eiuapp.github.io/github-handbook/categories/github.html</link>
-    <description>Recent content in github on Documentation for Hugo Learn Theme</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    <lastBuildDate>Mon, 25 Jun 2018 10:57:48 +0800</lastBuildDate>
-    
-	<atom:link href="https://eiuapp.github.io/github-handbook/categories/github/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>下载github加速</title>
-      <link>https://eiuapp.github.io/github-handbook/github/github-download-accelerate.html</link>
-      <pubDate>Mon, 25 Jun 2018 10:57:48 +0800</pubDate>
-      
-      <guid>https://eiuapp.github.io/github-handbook/github/github-download-accelerate.html</guid>
-      <description>让下载 github 更快
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>github on Documentation for Hugo Learn Theme</title><link>https://eiuapp.github.io/github-handbook/categories/github.html</link><description>Recent content in github on Documentation for Hugo Learn Theme</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Mon, 25 Jun 2018 10:57:48 +0800</lastBuildDate><atom:link href="https://eiuapp.github.io/github-handbook/categories/github/index.xml" rel="self" type="application/rss+xml"/><item><title>下载github加速</title><link>https://eiuapp.github.io/github-handbook/github/github-download-accelerate.html</link><pubDate>Mon, 25 Jun 2018 10:57:48 +0800</pubDate><guid>https://eiuapp.github.io/github-handbook/github/github-download-accelerate.html</guid><description>让下载 github 更快
 Step 把下面2句加入 hosts 文件
-DESKTOP-APB1HCJ% cat /etc/hosts 151.101.185.194 github.global.ssl.fastly.net 192.30.253.112 github.com  windows 参考 https://wanghualong.cn/archives/40/
+DESKTOP-APB1HCJ% cat /etc/hosts 151.101.185.194 github.global.ssl.fastly.net 192.30.253.112 github.com windows 参考 https://wanghualong.cn/archives/40/
 具体原理： https://blog.csdn.net/mist99/article/details/80602090
-但是，这里配置 hosts 文件的时候，写了 https:// 这个是不对的，去除就可以了。</description>
-    </item>
-    
-  </channel>
-</rss>
+但是，这里配置 hosts 文件的时候，写了 https:// 这个是不对的，去除就可以了。</description></item></channel></rss>

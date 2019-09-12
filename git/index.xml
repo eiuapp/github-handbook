@@ -1,25 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>git on Documentation for Hugo Learn Theme</title>
-    <link>https://eiuapp.github.io/github-handbook/git.html</link>
-    <description>Recent content in git on Documentation for Hugo Learn Theme</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    <lastBuildDate>Thu, 08 Aug 2019 21:07:13 +0100</lastBuildDate>
-    
-	<atom:link href="https://eiuapp.github.io/github-handbook/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>git</title>
-      <link>https://eiuapp.github.io/github-handbook/git/git-stash.html</link>
-      <pubDate>Thu, 08 Aug 2019 21:07:13 +0100</pubDate>
-      
-      <guid>https://eiuapp.github.io/github-handbook/git/git-stash.html</guid>
-      <description>关于 git stash
- 使用git stash apply stash@{1}就可以将你指定版本号为stash@{1}的工作取出来， 当你将所有的栈都应用回来的时候，可以使用git stash clear来将栈清空。  </description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>git on Documentation for Hugo Learn Theme</title><link>https://eiuapp.github.io/github-handbook/git.html</link><description>Recent content in git on Documentation for Hugo Learn Theme</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Thu, 08 Aug 2019 21:07:13 +0100</lastBuildDate><atom:link href="https://eiuapp.github.io/github-handbook/git/index.xml" rel="self" type="application/rss+xml"/><item><title>git</title><link>https://eiuapp.github.io/github-handbook/git/git-stash.html</link><pubDate>Thu, 08 Aug 2019 21:07:13 +0100</pubDate><guid>https://eiuapp.github.io/github-handbook/git/git-stash.html</guid><description>关于 git stash
+使用git stash apply stash@{1}就可以将你指定版本号为stash@{1}的工作取出来， 当你将所有的栈都应用回来的时候，可以使用git stash clear来将栈清空。</description></item></channel></rss>
