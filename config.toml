@@ -36,7 +36,7 @@ googleAnalytics = "c7442f5794ea2abb71c6ff05dc0b8779"
 
 	# Repository
 	provider = "GitHub"
-	repo_url = "https://github.com/eiuapp/learning-hugo"
+	repo_url = "https://github.com/eiuapp/github-handbook"
 
 	version = ""
 	logo = "images/logo.png"
