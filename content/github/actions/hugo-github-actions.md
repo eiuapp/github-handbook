@@ -22,6 +22,12 @@ hugo 与 github actions
 
 ### Create Deploy Key
 
+Official Documents is [here](https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys)
+
+install setup is [here](https://developer.github.com/v3/guides/managing-deploy-keys/#setup-2)
+
+Here is my Steps:
+
 1. Generate deploy key ssh-keygen -t rsa -f hugo -q -N ""
 2. Then go to "Settings > Deploy Keys" of repository
 3. Add your public key within "Allow write access" option.
