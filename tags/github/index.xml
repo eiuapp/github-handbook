@@ -2,4 +2,9 @@
 Step 把下面2句加入 hosts 文件
 DESKTOP-APB1HCJ% cat /etc/hosts 151.101.185.194 github.global.ssl.fastly.net 192.30.253.112 github.com windows 参考 https://wanghualong.cn/archives/40/
 具体原理： https://blog.csdn.net/mist99/article/details/80602090
-但是，这里配置 hosts 文件的时候，写了 https:// 这个是不对的，去除就可以了。</description></item></channel></rss>
+但是，这里配置 hosts 文件的时候，写了 https:// 这个是不对的，去除就可以了。</description></item><item><title>github search</title><link>https://eiuapp.github.io/github-handbook/github/github-search.html</link><pubDate>Mon, 25 Jun 2018 10:57:48 +0800</pubDate><guid>https://eiuapp.github.io/github-handbook/github/github-search.html</guid><description> Search Tips Help us find the item you want to find faster.
+basic search github search page
+https://github.com/search github search advanced
+https://github.com/search/advanced example:
+search the stars &amp;gt; 50000 https://github.com/search?o=desc&amp;amp;q=stars%3A%3E50000&amp;amp;s=stars&amp;amp;type=Repositories
+repo https://github.com/fengsehng/Github_Search_Skills/blob/master/README.md</description></item></channel></rss>
