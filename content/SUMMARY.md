@@ -18,3 +18,4 @@
     * [travis分支白名单导致无法构建](post/travis-build-using-a-safelist.md)
     * [Gitlab Authority](post/gitlab-authority.md)
     * [github做Markdown图床](post/github-image.md)
+    * [github search](post/github-search.md)
